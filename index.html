@@ -16,13 +16,13 @@
         <a href = "http://83.220.170.10:8892/fixed/#" target="_blank"><img alt="Логотип Кинотеатра Иннополис" title="Логотип Кинотеатра Иннополис" src="images/logo.png" /></a>
     </div>  
     <br><div>
-            Заказать билет
-            Преимущества
-            Фильмы
-            Контакты
+            <a href = "#" title="Заказать билет" alt = "Заказать билет">Заказать билет</a>
+            <a href = "#" title="Преимущества" alt = "Преимущества">Преимущества</a>
+            <a href = "#" title="Фильмы" alt = "Фильмы">Фильмы</a>
+            <a href = "#" title="Контакты" alt = "Контакты">Контакты</a>
             Ваш город: <u>Москва</u>
     </div>
-    <div>
+    <br><div>
         <img width="600" alt="Кинозал Иннополис" title="Кинозал Иннополис" src="images/kinozal.jpg"/>
         <h1>Закажите билет в кино</h1>
         <b>Всем покупателям подарок!</b>
@@ -143,6 +143,54 @@
             <a href="http://instagram.com" title="instagram" target="_blank">instagram</a>
         </div>
     </div>
+</footer>
+<form action="order.php">
+    <div>
+        <input type="text" name = "client_name" placeholder="Ваше имя*" required/>
+    </div>
+
+    <div>
+         <select>
+            <option>Выбор 1</option>
+            <option>Выбор 2</option>
+            <option>Выбор 3</option>
+            <option>Выбор 4</option>
+            <option>Выбор 5</option>
+            <option>Выбор 6</option>
+            <option>Выбор 7</option>
+            <option>Выбор 8</option>
+            <option>Выбор 9</option>
+            <option>Выбор 10</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="One">Выбор 1</label>
+        <input id = "One" type="radio" name="some"/>
+        <label for="Two">Выбор 2</label>
+        <input id = "Two" type="radio" name="some"/>
+    </div>
+
+    <div>
+        <textarea>
+            Тело тега
+        </textarea>
+    </div>
+
+    <div>
+        <input id="agree" type="checkbox" required/>
+        <label for="agree">Я согласен на обработку данных</label>
+    </div>
+
+    <div>
+        <input type="file"/>
+    </div>
+
+    <div>
+        <input type="submit" value="Заказать"/>
+    </div>
+
+</form>
 
 
 
