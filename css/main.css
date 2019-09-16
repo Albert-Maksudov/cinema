@@ -1,0 +1,71 @@
+body, p, h1, h2, h3, h4, h5, h6 {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+@font-face {
+    font: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+.movie-list{
+    padding: 100px 0px;
+}
+
+.movie-list__header{
+    font-size: 50px;
+    color: #252525;
+    font-weight: 700;
+    margin: 0 0 76px;
+    text-align: center;
+}
+
+.container{
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.movie-list__table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.movie-list__table th{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    background: #a3cc40;
+    padding: 19px 0px;
+}
+
+.movie-list__table tr:nth-child(odd){
+    font-size: 22px;
+    color: #fff;
+    background: #373737;
+}
+
+.movie-list__table tr{
+    font-size: 22px;
+    color: #fff;
+    background: #4b4d4f;
+}
+
+.movie-list__table td{
+    font-weight: 200;
+    padding: 19px 0px;
+    text-align: center;
+}
