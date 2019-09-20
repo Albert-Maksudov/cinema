@@ -67,7 +67,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .movie-list__table td{
     font-weight: 200;
     padding: 19px 0px;
-    text-align: center;
+    text-align: left;
+    /*vertical-align: top;*/
 }
 
 .movie-list__table a{
@@ -77,4 +78,9 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .section {
     margin: 15px 0 0 0;
+}
+
+.sorting {
+    font-size: 22px;
+    vertical-align: center;
 }
