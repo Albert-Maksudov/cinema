@@ -7,6 +7,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 @font-face {
     font: 'Roboto';
@@ -20,21 +21,79 @@ body, p, h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+.logo-nav {
+    padding-top: 53px;
+    padding-bottom: 170px;
+ 
+}
+
+.logo {
+    display: inline-block;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.description {
+    background: url('/Users/noname/Desktop/Projects/Cinema/images/kinozal.jpg') no-repeat center / cover;
+    height: 100vh;
+}
+
+.description__content {
+    width: 1030px;
+    margin: auto;
+
+}
+
+.description::after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 200px;
+    transform: rotate(-4deg);
+    background: #fff;
+    top: 85%;
+    bottom: 0px;
+    left: 0;
+}
+
+.description h1{
+    font-weight: 100;
+}
+
+.description h2{
+    font-size: 58px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+}
+
 .movie-list{
     padding: 100px 0px;
 }
 
 .movie-list__header{
     font-size: 46.396px;
-    color: #252525;
+    color: rgb(37, 37, 37);
     font-weight: 700;
     margin: 0 0 80px;
     text-align: center;
 }
 
-.container{
-    max-width: 1030px;
+.container {
+    width: 1030px;
     margin: 0 auto;
+    position: relative;
+    margin-top: 83px;
+    padding: 0 18px;
+}
+
+.container_welcome {
+    width: 1030px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .movie-list__table{
@@ -83,4 +142,213 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .sorting {
     font-size: 22px;
     vertical-align: center;
+}
+
+p {
+    font-size: 14px;
+    color: rgb(36, 36, 36);
+    line-height: 1.2;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 93px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    color: rgb(37, 37, 37);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 35px;
+    color: rgb(36, 36, 36);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.block_advantages {
+    float: left;
+    width: 33.33%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.block_advantages__image-wrap {
+    position: relative;
+    height: 211px;
+    margin-bottom: 40px;
+}
+
+.block_advantages__image-wrap img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+.advantages p {
+    margin-top: 16px;
+    text-align: center;
+}
+  
+.button {
+    background: #a3cc40;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px 30px;
+    display: inline-block;
+    margin-top: 33px;
+}
+
+.clear {
+    clear: both;
+}
+
+.block_welcome {
+    width: 515px;
+    padding: 40px 30px;
+    background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+    position: absolute;
+    top: -280px;
+    right: 0;
+    z-index: 1;
+}
+
+.movie-grid__flex {
+    display: flex;
+    margin: 0 -18px;
+    flex-wrap: wrap;
+}
+
+.movie-grid__item {
+    padding: 18px;
+    border-radius: 15px
+}
+
+.movie-grid__inner1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-grid__poster {
+
+}
+
+.movie-grid__description {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    bottom: -100%;
+    background: rgba(144,210,61,0.8);
+    border-radius: 15px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.movie-grid__item:hover .movie-grid__description {
+    bottom: 0;
+}
+
+.movie-grid__text1 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.movie-grid__text2 {
+    font-size: 18px;
+    color: #fff;
+    flex: 1;
+}
+
+.movie-grid__hr {
+    width: 80px;
+    height: 8px;
+    border: 0;
+    box-shadow: none;
+    margin: 0 0 14px;
+    background: #fff;
+}
+
+.movie-grid__svg {
+    fill: #fff;
+    transition: .2s;
+}
+
+.movie-grid__svg:hover {
+    fill: green;
+}
+
+.movie-grid__link1 {
+    text-decoration: none;
+}
+
+.gift {
+    background-image: url('/Users/noname/Desktop/Projects/Cinema/images/gift.jpg');
+    margin-bottom: 90px;
+}
+
+.gift__description {
+    text-align: right;
+    margin-left: 300px;
+    color: #fff;
+    padding: 142px 0;
+}
+
+.gift__img {
+    position: absolute;
+    margin-top: -100px;
+    z-index: 999;
+}
+
+.gift::after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 130px;
+    transform: rotate(-4deg);
+    background: #fff;
+    top: 270%;
+    bottom: 0px;
+    left: -10px;
+}
+
+.description__content::after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 110px;
+    transform: rotate(-4deg);
+    background: #fff;
+    top: 348%;
+    bottom: 0px;
+    left: -10px;
+}
+
+.table_description p {
+    text-align: center;
+    margin-bottom: 82px;
+    margin-top: 40px;
+}
+
+.films p{
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
