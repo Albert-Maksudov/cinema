@@ -9,6 +9,12 @@ body, p, h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 @font-face {
     font: 'Roboto';
     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
@@ -33,10 +39,21 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .nav {
     display: inline-block;
+    position: relative;
+    margin-left: 36px;
+    color: #fff;
+}
+
+.nav:first-child {
+    margin-left: 260px;
+}
+
+.nav a:hover {
+    border-bottom: 1px solid #fff;
 }
 
 .description {
-    background: url('/Users/noname/Desktop/Projects/Cinema/images/kinozal.jpg') no-repeat center / cover;
+    background: url('../images/kinozal.jpg') no-repeat center / cover;
     height: 100vh;
 }
 
@@ -180,10 +197,21 @@ h3 {
     margin-top: 120px;
 }
 
+.block_advantages_2 {
+    float: left;
+    width: 33.33%;
+    margin: 0 auto;
+    margin-top: 95px;    
+}
+
 .block_advantages__image-wrap {
     position: relative;
     height: 211px;
     margin-bottom: 40px;
+}
+
+.block_advantages__image-wrap:hover {
+    transform: scale(1.07)
 }
 
 .block_advantages__image-wrap img {
@@ -228,7 +256,7 @@ h3 {
 
 .movie-grid__flex {
     display: flex;
-    margin: 0 -18px;
+    margin: 0;
     flex-wrap: wrap;
 }
 
@@ -301,8 +329,9 @@ h3 {
 }
 
 .gift {
-    background-image: url('/Users/noname/Desktop/Projects/Cinema/images/gift.jpg');
+    background-image: url('../images/gift.jpg');
     margin-bottom: 90px;
+    position: relative;
 }
 
 .gift__description {
@@ -318,6 +347,18 @@ h3 {
     z-index: 999;
 }
 
+.gift::before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 130px;
+    transform: rotate(-4deg);
+    background: #fff;
+    top: -13%;
+    bottom: 0px;
+    left: -10px;
+}
+
 .gift::after {
     content: '';
     position: absolute;
@@ -325,20 +366,8 @@ h3 {
     height: 130px;
     transform: rotate(-4deg);
     background: #fff;
-    top: 270%;
-    bottom: 0px;
-    left: -10px;
-}
-
-.description__content::after {
-    content: '';
-    position: absolute;
-    width: 110%;
-    height: 110px;
-    transform: rotate(-4deg);
-    background: #fff;
-    top: 348%;
-    bottom: 0px;
+    top: 90%;
+    bottom: 20%;
     left: -10px;
 }
 
@@ -351,4 +380,72 @@ h3 {
 .films p{
     margin-top: 50px;
     margin-bottom: 80px;
+}
+
+.placeholder_map {
+    background-image: url("../images/placeholder_map.jpeg");
+    height: 450px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    position: absolute;
+    background: rgb(144, 210, 61);
+    width: 100%;
+    height: 220px;
+  }
+
+.footer_description p {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.social {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.social__facebook {
+    background: url("../images/facebook.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.social__twitter {
+    background: url("../images/twitter.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-left: 13px;
+}
+
+.social__linkedin {
+    background: url("../images/linkedin.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-left: 13px;
+}
+
+.social__google_plus {
+    background: url("../images/google_plus.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-left: 13px;
+}
+
+.social__tumblr {
+    background: url("../images/tumblr.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-left: 13px;
+}
+
+.form {
+    margin-bottom: 15px;
 }
