@@ -1,4 +1,4 @@
-body, p, h1, h2, h3, h4, h5, h6 {
+html, body, p, h1, h2, h3, h4, h5, h6, img, div, span {
     background: transparent;
     border: 0;
     margin: 0;
@@ -48,7 +48,7 @@ a {
     color: #fff;
 }
 
-.nav a:hover {
+.nav li a:hover {
     border-bottom: 1px solid #fff;
 }
 
@@ -270,12 +270,12 @@ h3 {
     overflow: hidden;
 }
 
-.movie-grid__poster img{
+.movie-grid__poster img {
     display: block;
 }
 
 .movie-grid__description {
-    position: absolute;
+    /* position: absolute;
     left: 0;
     right: 0;
     height: 100%;
@@ -286,7 +286,16 @@ h3 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    transition: 0.2s;
+    transition: 0.2s; */
+
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    background: #46c90b;
+    opacity: .8;
+    transition: .2s;
 }
 
 .movie-grid__item:hover .movie-grid__description {
@@ -366,7 +375,9 @@ h3 {
     height: 130px;
     transform: rotate(-4deg);
     background: #fff;
-    bottom: -8%;
+    top: 90%;
+    bottom: 20%;
+    left: -10px;
 }
 
 .table_description p {
