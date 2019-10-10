@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="build/style.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -109,10 +112,10 @@
                                     </tr>
                                 </thead>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: top;">10am - 12pm</td>
-                                        <td style="padding-left: 2.5rem; vertical-align: top;"><a title="kinopoisk.ru: Человек паук" href="https://www.kinopoisk.ru/film/838/" target="_blank"> Человек паук</a></td>
+                                        <td style="text-align: center; vertical-align: top;" id="start_film_1"></td>
+                                        <td style="padding-left: 2.5rem; vertical-align: top;" id="name_film_1"><a title="kinopoisk.ru: Человек паук" href="https://www.kinopoisk.ru/film/838/" target="_blank"></a></td>
                                         <!--<td style="text-align: left;">Introduction and presentations about Envato</td>-->
-                                        <td style="vertical-align: top;">фантастика, боевик, приключения</td>
+                                        <td style="vertical-align: top;" id="genre_film_1"></td>
                                         <td>
                                             <svg 
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -125,10 +128,10 @@
                                     </tr>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: top;">12pm - 02pm</td>
-                                        <td style="padding-left: 2.5rem; vertical-align: top;"><a title="kinopoisk.ru: Собачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/" target="_blank"> Собачья жизнь 2</a></td>
+                                        <td style="text-align: center; vertical-align: top;" id="start_film_2"></td>
+                                        <td style="padding-left: 2.5rem; vertical-align: top;" id="name_film_2"><a title="kinopoisk.ru: Собачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/" target="_blank"></a></td>
                                         <!--<td style="text-align: left;">Sessions by honorable guests and Speakers</td>-->
-                                        <td style="vertical-align: top;">фэнтези, драма, комедия, приключения, семейный</td>
+                                        <td style="vertical-align: top;" id="genre_film_2"></td>
                                         <td>
                                             <svg 
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -140,10 +143,10 @@
                                         </td>
                                     </tr>  
                                     <tr>
-                                        <td style="text-align: center; vertical-align: top;">02pm - 03pm</td>
-                                        <td style="padding-left: 2.5rem; vertical-align: top;"><a title="kinopoisk.ru: История игрушек 4" href="https://www.kinopoisk.ru/film/846824/" target="_blank"> История игрушек 4</a></td>
+                                        <td style="text-align: center; vertical-align: top;" id="start_film_3"></td>
+                                        <td style="padding-left: 2.5rem; vertical-align: top;" id="name_film_3"><a title="kinopoisk.ru: История игрушек 4" href="https://www.kinopoisk.ru/film/846824/" target="_blank"></a></td>
                                         <!--<td style="text-align: left;">Break and Mingle time with the authors</td>-->
-                                        <td style="vertical-align: top;">мультфильм, фэнтези, комедия, приключения, семейный</td>
+                                        <td style="vertical-align: top;" id="genre_film_3"></td>
                                         <td>
                                             <svg 
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -155,10 +158,10 @@
                                         </td>
                                     </tr> 
                                     <tr>
-                                        <td style="text-align: center; vertical-align: top;">03pm - 05pm</td>
-                                        <td style="padding-left: 2.5rem; vertical-align: top;"><a title="kinopoisk.ru: Люди в черном: Интернэшнл" href="https://www.kinopoisk.ru/film/693730/" target="_blank"> Люди в черном: Интернэшнл</a></td>
+                                        <td style="text-align: center; vertical-align: top;" id="start_film_4"></td>
+                                        <td style="padding-left: 2.5rem; vertical-align: top;" id="name_film_4"><a title="kinopoisk.ru: Люди в черном: Интернэшнл" href="https://www.kinopoisk.ru/film/693730/" target="_blank"></a></td>
                                         <!--<td style="text-align: left;">Portfolio Review, Rewards and Ending Presentation</td>-->
-                                        <td style="vertical-align: top;">фантастика, боевик, комедия, приключения</td>
+                                        <td style="vertical-align: top;" id="genre_film_4"></td>
                                         <td>
                                             <svg 
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +216,7 @@
                         Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.
                     </p>                
             </div>
-            <div class="movie-grid__flex">
+            <div class="movie-grid__flex owl-carousel">
                 <div class="movie-grid__item">
                     <div class="movie-grid__inner1">
                         <div class="movie-grid__poster">
@@ -1250,7 +1253,7 @@
 
 <form class="form" action="order.php">
     <div>
-        <input type="text" name = "client_name" placeholder="Ваше имя*" required/>
+        <input id="name_guest" type="text" name = "client_name" placeholder="Ваше имя*" required/>
     </div>
 
     <div>
@@ -1320,8 +1323,30 @@
     </div>
 </footer>
 
+<script src = "js/films.js"></script>
+<script src = "js/getPresent.js"></script>
 
+<script src = "js/jquery-3.4.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
 </body>
 
 </html>
