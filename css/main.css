@@ -293,7 +293,7 @@ h3 {
     height: 100%;
     bottom: -100%;
     background: rgba(144,210,61,0.8);
-    border-radius: 0.75rem;
+    border-radius: 0.4rem;
     padding: 1.15rem;
     display: flex;
     flex-direction: column;
@@ -306,7 +306,7 @@ h3 {
 }
 
 .movie-grid__text1 {
-    font-size: 1.75rem;
+    font-size: 1rem;
     font-weight: 900;
     color: #fff;
     margin: 0 0 0.5rem;
@@ -458,4 +458,21 @@ h3 {
 
 .form {
     margin-bottom: 0.75rem;
+}
+
+.owl-nav {
+    position: relative;
+    top: -114px;
+    font-size: 40px;
+    color: #909090;
+}
+
+.owl-prev {
+    position: absolute;
+    left: -30px;
+}
+
+.owl-next {
+    position: absolute;
+    right: -30px;
 }

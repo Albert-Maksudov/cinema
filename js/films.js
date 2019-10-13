@@ -52,6 +52,3 @@ element_genre_film_3.innerHTML = genre_film_3;
 element_start_film_4.innerHTML = start_film_4;
 element_name_film_4.innerHTML = name_film_4;
 element_genre_film_4.innerHTML = genre_film_4;
-
-
-console.log();
