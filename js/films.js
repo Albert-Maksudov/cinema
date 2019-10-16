@@ -20,21 +20,21 @@
 // let genre_film_3 = genre_4 + ', ' + genre_6 + ', ' + genre_3;
 // let genre_film_4 = genre_1 + ', ' + genre_2 + ', ' + genre_3 + ', ' + genre_6;
 
-let element_start_film_1 = document.getElementById('start_film_1');
-let element_name_film_1 = document.getElementById('name_film_1');
-let element_genre_film_1 = document.getElementById('genre_film_1');
+// let element_start_film_1 = document.getElementById('start_film_1');
+// let element_name_film_1 = document.getElementById('name_film_1');
+// let element_genre_film_1 = document.getElementById('genre_film_1');
 
-let element_start_film_2 = document.getElementById('start_film_2');
-let element_name_film_2 = document.getElementById('name_film_2');
-let element_genre_film_2 = document.getElementById('genre_film_2');
+// let element_start_film_2 = document.getElementById('start_film_2');
+// let element_name_film_2 = document.getElementById('name_film_2');
+// let element_genre_film_2 = document.getElementById('genre_film_2');
 
-let element_start_film_3 = document.getElementById('start_film_3');
-let element_name_film_3 = document.getElementById('name_film_3');
-let element_genre_film_3 = document.getElementById('genre_film_3');
+// let element_start_film_3 = document.getElementById('start_film_3');
+// let element_name_film_3 = document.getElementById('name_film_3');
+// let element_genre_film_3 = document.getElementById('genre_film_3');
 
-let element_start_film_4 = document.getElementById('start_film_4');
-let element_name_film_4 = document.getElementById('name_film_4');
-let element_genre_film_4 = document.getElementById('genre_film_4');
+// let element_start_film_4 = document.getElementById('start_film_4');
+// let element_name_film_4 = document.getElementById('name_film_4');
+// let element_genre_film_4 = document.getElementById('genre_film_4');
 
 let arr_time = ['10:00', '12:00', '14:00', '16:00'];
 let arr_film_names = ['Человек-паук', 'Собачья жизнь 2', 'История игрушек 4', 'Люди в черном: Интернэшнл'];
@@ -69,3 +69,60 @@ for(let i = 0; i < count; i++){
     element_genre_film = document.getElementById('genre_film_' + (i + 1));
     element_genre_film.innerHTML = film[i].genres;
 }
+
+
+
+//Задача 1
+let arr = ["Hello", 777, false]
+console.log(arr)
+console.log('//////////////')
+//Задача 2
+let a3 = {
+    3 : 'hello',
+    'one' : 'hi',
+    'testt' : 'vodoley',
+    'ivan' : 'ivanov',
+}
+
+for (let key in a3) {
+    if (key.length > 4) {
+        a3[key]
+        console.log(a3[key])
+    }
+}
+console.log('//////////////')
+//Задача 3
+
+
+
+//Задача 4
+const a = ['Tor', 'Lokki', 'Odin', 34, 'privet']
+console.log(a.length)
+console.log('//////////////')
+
+//Задача 5
+let d = [0, 2, 5, -4, 6, 22, -9, -12, 13, 78];
+a1 = [];
+a2 = [];
+
+d.forEach(function(item) {
+    if (item < 0) {
+        a1.push(item)
+    } else {
+        a2.push(item)
+    }
+});
+console.log(a1)
+console.log(a2)
+console.log('//////////////')
+
+//Задача 6
+let d2 = [0, 2, 5, -4, 6, 22, -9, -12, 13, 78];
+debugger
+for (let i = 0; i < d2.length; i++) {
+    if(d2[i] > d2[0]){
+        d2[0] = d2[i];
+    }
+
+}
+console.log(d2[0]);
