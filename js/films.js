@@ -253,3 +253,19 @@ function assign () {
 function randomFromRange (startRange, finishRange) {
     alert(Math.floor(Math.random() * (finishRange - startRange + 1)) + startRange)
 }
+
+//4.7 Задача 1.1
+const arr471 = [10, 12, 15, 21];
+    for (let i = 0; i < arr471.length; i++) {
+        setTimeout(function() {
+            console.log('Index: ' + i + ', element: ' + arr471[i]);
+        }, 3000);
+    }
+
+//4.7 Задача 1.2
+const arr472 = [10, 12, 15, 21];
+    for (var i = 0; i < arr472.length; i++) {
+        //setTimeout(function() {
+            console.log('Index: ' + i + ', element: ' + arr472[i]);
+        //}, 3000);
+    }
