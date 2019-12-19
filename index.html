@@ -200,7 +200,7 @@
                             Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.Случайный текст.
                         </p>
                         <div>
-                            <a href ="#" class="button" title="Получить подарок" alt="Получить подарок">Получить подарок</a>
+                            <button id="getPresentModal" class="button" title="Получить подарок" alt="Получить подарок">Получить подарок</button>
                         </div>
                     </div>  
             </section>
@@ -1247,56 +1247,41 @@
         </div>
     </section>
 
+<!-- <input id = "client_name_input">
+<button id = "client_name_button">нажми</button>
+<script>
+    let button = document.getElementById('client_name_button')
+    button.onclick = function () {
+        let client_name = document.getElementById('client_name_input')
+        let client_name_value = client_name.value
+        console.log(client_name_value)
+    }
+</script> -->
+
 <div class="placeholder_map">
 
 </div>
 
-<form class="form" action="order.php">
-    <div>
-        <input id="name_guest" type="text" name = "client_name" placeholder="Ваше имя*" required/>
-    </div>
 
-    <div>
-         <select name="client_chose_select">
-            <option>Выбор 1</option>
-            <option>Выбор 2</option>
-            <option>Выбор 3</option>
-            <option>Выбор 4</option>
-            <option>Выбор 5</option>
-            <option>Выбор 6</option>
-            <option>Выбор 7</option>
-            <option>Выбор 8</option>
-            <option>Выбор 9</option>
-            <option>Выбор 10</option>
-        </select>
+<div style="margin-bottom: 10px;">
+    <h1 style = "color:black">РЕЛИЗ 4.6</h1>
+    <h4 style = "color:black">Задача №1</h4>
+    <ul></ul>
+    <input id = "4.6.1 name" placeholder="Ваше имя"/>
+    <button id = "4.6.1 button" onclick=getName()>Нажми меня</button>
+</div>
+<div style="margin-bottom: 10px;">
+    <h4 style = "color:black">Задача №2</h4>
+    <input id = "4.6.2.1" type="number" placeholder="Введите число №1"/>
+    <input id = "4.6.2.2" type="number" placeholder="Введите число №2"/>
+    <button id = "4.6.2 button" onclick=compare()>Сравнить числа</button>
+</div>
+<div style="margin-bottom: 10px;">
+        <h4 style = "color:black">Задача №4</h4>
+        <input id = "4.6.4.1" type="number" placeholder="Начало диапазона"/>
+        <input id = "4.6.4.2" type="number" placeholder="Конец диапазона"/>
+        <button id = "4.6.4 button" onclick=assign()>Получить число</button>
     </div>
-
-    <div>
-        <label for="One">Выбор 1</label>
-        <input id = "One" type="radio" name="client_chose_radio_1"/>
-        <label for="Two">Выбор 2</label>
-        <input id = "Two" type="radio" name="client_chose_radio_2"/>
-    </div>
-
-    <div>
-        <textarea placeholder="Комментарий" name="comment">
-        </textarea>
-    </div>
-
-    <div>
-        <input id="agree" type="checkbox" name="client_agree" required/>
-        <label for="agree">Я согласен на обработку данных</label>
-    </div>
-
-    <div>
-        <input type="file"/>
-    </div>
-
-    <div>
-        <input type="submit" value="Заказать"/>
-    </div>
-
-</form>
 
 <footer class="footer">
     <div class="social">
@@ -1322,6 +1307,59 @@
         </div>
     </div>
 </footer>
+
+<div id="modalPresent">
+        <form class="form">
+            <button id="closeModalPresent">X</button>
+            <div>
+                <input id="name_guest" type="text" name="client_name" placeholder="Ваше имя*" required />
+            </div>
+        
+            <div>
+                <select name="client_chose_select" id="select_guest">
+                    <option>Выбор 1</option>
+                    <option>Выбор 2</option>
+                    <option>Выбор 3</option>
+                    <option>Выбор 4</option>
+                    <option>Выбор 5</option>
+                    <option>Выбор 6</option>
+                    <option>Выбор 7</option>
+                    <option>Выбор 8</option>
+                    <option>Выбор 9</option>
+                    <option>Выбор 10</option>
+                </select>
+            </div>
+        
+            <div>
+                <label for="One">Выбор 1</label>
+                <input id="One" type="radio" name="client_chose_radio_1" />
+                <label for="Two">Выбор 2</label>
+                <input id="Two" type="radio" name="client_chose_radio_2" />
+            </div>
+        
+            <div>
+                <textarea placeholder="Комментарий" name="comment">
+                                    </textarea>
+            </div>
+        
+            <div>
+                <input id="agree" type="checkbox" name="client_agree" required />
+                <label for="agree">Я согласен на обработку данных</label>
+            </div>
+        
+            <div>
+                <input type="file" />
+            </div>
+        
+            <div>
+                <button id="sendPresentInfo" class="button" type="submit" value="Заказать">Заказать</button>
+            </div>
+        </form>
+</div>
+
+<ul>
+
+</ul>
 
 <!-- <script src = "js/films.js"></script> -->
 <script src = "js/films.js"></script>
